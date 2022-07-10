@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rokola</title>
+</head>
+
+<body bgcolor="black">
+
+    <div style="margin-top: 1%; color: white; ">
+        <marquee behavior="scroll" direction="left; " style="font-family:Trebuchet MS ; size: 20; size: adjust 20px;">
+            ROCOLA</marquee>
+    </div>
+
+
+
+
+    <div style="text-align:left; margin-top: 0%; color: white;" class="can">
+        <h3>Lista de canciones</h3>
+        <form action="select" id="can">
+            <input type="checkbox" id="cancion1" name="cancion1" value="Cancion1">
+            <label for="cancion1">BJMO - Drums</label><br>
+            <input type="checkbox" id="cancion2" name="cancion2" value="cancion2">
+            <label for="cancion2">BJMO - Blossom</label><br>
+            <input type="checkbox" id="cancion3" name="cancion3" value="cancion3">
+            <label for="cancion3">BJMO - Air</label><br>
+            <input type="checkbox" id="cancion4" name="cancion4" value="Cancion4">
+            <label for="cancion4">SZP - Soft Ass Shit</label><br>
+            <input type="checkbox" id="cancion5" name="cancion5" value="cancion5">
+            <label for="cancion5">DEORRO - Dime</label><br>
+            <input type="checkbox" id="cancion6" name="cancion6" value="cancion6">
+            <label for="cancion6">DEORRO - Adicto</label><br>
+            <input type="checkbox" id="cancion7" name="cancion7" value="Cancion7">
+            <label for="Cancion7">BJMO - imagine</label><br>
+            <input type="checkbox" id="cancion8" name="cancion8" value="cancion8">
+            <label for="cancion8">BJMO - Stay Aweke</label><br>
+            <input type="checkbox" id="cancion9" name="cancion9" value="Cancion9">
+            <label for="Cancion9">BAD BUNNY - Ojos Bonitos</label><br>
+            <input type="checkbox" id="cancion10" name="cancion10" value="cancion10">
+            <label for="cancion10">LIT KILLA - Bipolar</label><br>
+        </form>
+
+    </div>
+    <div style="text-align:left; margin-top: -1%; color: white;">
+        <h3>Ingrese creditos</h3>
+        <textarea name="usuario" id="texto" cols="20" rows="2"></textarea>
+    </div>
+
+
+    <div style="text-align:center; margin-top: -20%;">
+        <img src="img/giphy (35).gif" alt="">
+
+    </div>
+
+
+    <audio src="musica/I_S_A_B_E_L/4.-B/BJMO_IS_B.mp3"></audio>
+
+</body>
+<script>
+    var eleccion = document.querySelector("can");
+    var costo = document.getElementById("texto");
+    var cambioDeImagen = document.getElementById("img");
+
+    // inputInstance.indeterminate = true;
+    ///-------
+    const musica = new Audio("musica/I_S_A_B_E_L/4.-B/BJMO_IS_B.mp3");
+    musica.play();
+    musica.loop = false;
+    musica.playbackRate = 2;
+    musica.pause();
+
+
+    eleccion.addEventListener("change", () => {
+
+        switch (eleccion) {
+            case cancion1:
+                const musica = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+            case cancion2:
+                const musica2 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+
+                break;
+            case cancion3:
+                const musica3 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+            case cancion4:
+                const musica4 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+            case cancion5:
+                const musica5 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+            case cancion6:
+                const musica6 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+            case cancion7:
+                const musica7 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+            case cancion8:
+                const musica8 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+            case cancion9:
+                const musica9 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+            case cancion10:
+                const musica10 = new Audio("musica/I_S_A_B_E_L/1.-I/BJMO_IMAGINATE.wav");
+                musica.play();
+
+                break;
+
+
+            default:
+                break;
+        }
+
+    })
+
+
+
+    function cambiarImagen() {
+
+        switch (numero) {
+            case 1:
+                img.src = "img/BJMO.png";
+                break;
+            case 2:
+                img.src = "img/Are Songs Reminds Me Of You.png";
+                break;
+            case 3:
+                img.src = "img/Are Songs Reminds Me Of You.png";
+                break;
+            case 4:
+                img.src = "img/giphy (33).gif";
+                break;
+            case 5:
+                img.src = "img/giphy (33).gif";
+                break;
+            case 6:
+                img.src = "img/giphy (33).gif";
+                break;
+            case 7:
+                img.src = "img/Are Songs Reminds Me Of You.png";
+                break;
+            case 8:
+                img.src = "img/Are Songs Reminds Me Of You.png";
+                break;
+            case 9:
+                img.src = "img/giphy (33).gif";
+                break;
+            case 10:
+                img.src = "img/giphy (33).gif";
+
+                break;
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>
